@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'general.css' %}">
+        <link rel="stylesheet" href="{% static 'home-page.css' %}">
+        <link rel="stylesheet" href="{% static 'header.css' %}">
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="left-section">
+                <div class="logo-icon-container">
+                    <a href="{% url 'HomeView' %}">
+                        <img class="logo-icon" src="{% static 'img/egg.png' %}">
+                        <div class="tooltip">Home Page</div>
+                    </a>
+                </div>
+                <div class="ovo">Ovo sabor Eggs</div>
+            </div>
+            <div class="middle-section">
+                    <div class="search-container">
+                        <input class="search-bar" type="text" placeholder="Search">
+                        <img class="search-icon" src="{% static 'img/search.svg' %}">
+                    </div>
+            </div>
+            <div class="right-section">
+                <div class="profile-icon-container">
+                    <a href="{% url 'ProfileView' %}">
+                        <img class="profile-icon" src="{% static 'img/profile.png' %}">
+                        <div class="tooltip">Profile</div>
+                    </a>
+                </div>
+                <div class="list-icon-container">
+                    <a href="{% url 'ListView' %}">
+                        <img class="list-icon" src="{% static 'img/heart.png' %}">
+                        <div class="tooltip">Liked Items</div>
+                    </a>
+                </div>
+                <div class="cart-icon-container">
+                    <a href="{% url 'CartView' %}">
+                        <img class="cart-icon" src="{% static 'img/shopping-cart.png' %}">
+                        <div class="tooltip">Cart</div>
+                    </a>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
