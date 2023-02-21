@@ -1,0 +1,13 @@
+.content-profile{
+    padding-top: 40px;
+    padding-left: 15px;
+}
+
+.submit-button{
+    background-color: yellow;
+    border-style: none;
+    border-radius: 14px;
+    padding: 10px 20px 10px 20px;
+
+    margin-top: 10px;
+}
