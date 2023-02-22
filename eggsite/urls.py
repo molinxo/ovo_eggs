@@ -27,6 +27,7 @@ from django.conf import settings
 urlpatterns = [
     path('', include('store.urls')),
     path('profile/', users_view.ProfileView, name='ProfileView'),
+    path('join/', users_view.JoinView, name='JoinView'),
     path('admin/', admin.site.urls),
 ]
 
